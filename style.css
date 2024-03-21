@@ -1,0 +1,96 @@
+body{
+    color: white;
+    font-family: cursive;
+    margin: 0;
+    overflow-x: hidden;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgb(15, 28, 82);
+}
+.title h1{
+    font-size: 60px;
+    margin: 0;
+}
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+    height: 150px;
+    background-color: rgb(216, 216, 216);
+    padding: 15px;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 15px rgb(0, 0, 0, 0.4);
+}
+.content input{
+    width: 500px;
+    height: 50px;
+    padding: 0 20px;
+    border: none;
+    border-radius: 100px;
+}
+.content button{
+    color: white;
+    font-size: 15px;
+    width: 160px;
+    height: 50px;
+    background-color: rgb(35, 104, 252);
+    margin: 0 10px;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+.content button:hover{
+    background-color: rgb(12, 68, 188);
+}
+.reply{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-size: 22px;
+    width: 600px;
+    height: 280px;
+    background-color: rgb(216, 216, 216);
+    padding: 15px;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 15px rgb(0, 0, 0, 0.4);
+    overflow-y: auto;
+}
+@media (max-width: 800px) {
+    .title h1{
+        font-size: 40px;
+    }
+    .content, .reply{
+        width: 500px;
+    }
+    .content{
+        height: 100px;
+    }
+    .reply{
+        height: 200px;
+    }
+}
+@media (max-width: 555px) {
+    .title h1{
+        font-size: 30px;
+    }
+    .content, .reply{
+        width: 350px;
+    }
+    .content{
+        height: 80px;
+    }
+    .reply{
+        font-size: 18px;
+        height: 150px;
+    }
+}
