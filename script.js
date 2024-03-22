@@ -5,7 +5,7 @@ document.querySelector('button').onclick = () =>{
 function sendQues() {
     let ques = document.querySelector('input').value;
     let headers = {
-        Authorization: "Bearer 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"
+        Authorization: "Bearer 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"
     }
     let body = {
         model: "gpt-3.5-turbo",
